@@ -1,0 +1,12 @@
+{
+  "name": "nasa-apod",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Visualizador da imagem astronômica do dia da NASA",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

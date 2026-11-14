@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="AstroVisão: inteligência espacial ao alcance de todos com a imagem astronômica do dia da NASA."
+    />
+    <title>AstroVisão — NASA APOD</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="AstroVisão, página inicial">
+          <span class="brand-mark" aria-hidden="true">🧑‍🚀</span>
+          <span>AstroVisão</span>
+        </a>
+        <span class="source-label"><span class="live-dot"></span> <span aria-hidden="true">🪐</span> NASA · APOD</span>
+      </header>
+
+      <main>
+        <section class="intro" aria-labelledby="page-title">
+          <p class="eyebrow"><span aria-hidden="true">✨</span> ASTRONOMY PICTURE OF THE DAY</p>
+          <h1 id="page-title">AstroVisão</h1>
+          <p class="intro-copy">
+            <span aria-hidden="true">🚀</span> Inteligência espacial ao alcance de todos.
+            <span aria-hidden="true">🌌</span>
+          </p>
+          <form class="date-picker" id="date-form">
+            <label for="apod-date-picker">Explorar outra data</label>
+            <input id="apod-date-picker" name="date" type="date" required />
+            <button type="submit">Ver APOD</button>
+          </form>
+        </section>
+
+        <section class="apod-card" aria-label="Imagem astronômica do dia">
+          <div class="media-frame" id="media-frame">
+            <div class="loading-state" id="loading-state" role="status">
+              <span class="loader" aria-hidden="true"></span>
+              <span>Buscando o universo de hoje...</span>
+            </div>
+          </div>
+          <article class="story">
+            <div class="story-heading">
+              <div>
+                <p class="eyebrow" id="apod-date">NASA ASTRONOMY PICTURE OF THE DAY</p>
+                <h2 id="apod-title">Carregando descoberta...</h2>
+              </div>
+              <span class="media-badge" id="media-badge" hidden></span>
+            </div>
+            <p class="explanation" id="apod-explanation"></p>
+            <p class="credit" id="apod-credit"></p>
+            <div class="error-state" id="error-state" role="alert" hidden>
+              <p id="error-message"></p>
+              <button class="retry-button" id="retry-button" type="button">Tentar novamente</button>
+            </div>
+          </article>
+        </section>
+
+        <section class="about-sections" aria-label="Sobre o AstroVisão">
+          <article class="info-panel">
+            <h2>Sobre Nós: </h2>
+            <p>
+              A <strong>NASA</strong> é a agência espacial dos Estados Unidos,
+              responsável por liderar missões de exploração espacial, pesquisas
+              científicas e desenvolvimento de tecnologias inovadoras. Desde
+              1958, a agência contribui para grandes descobertas sobre a Terra,
+              a Lua, Marte e o universo, inspirando gerações a explorar novas
+              fronteiras.
+            </p>
+            <p>
+              <span aria-hidden="true">🚀</span>
+              <strong>Explorando o universo para ampliar o conhecimento e
+                transformar o futuro.</strong>
+            </p>
+          </article>
+          <article class="info-panel">
+            <h2>Quem Somos:</h2>
+            <p>
+              Somos uma plataforma dedicada à exploração espacial, ciência e
+              tecnologia, inspirada pelas descobertas que ampliam o conhecimento
+              sobre o universo.
+            </p>
+            <p>
+              <span aria-hidden="true">🚀</span>
+              <strong>Conectando pessoas ao espaço, à inovação e ao futuro.</strong>
+            </p>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        <span><span aria-hidden="true">✨</span> Uma janela para o universo, todos os dias. <span aria-hidden="true">🌠</span></span>
+        <span>Dados e conteúdo: <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank" rel="noreferrer">NASA APOD</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
